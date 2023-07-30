@@ -1,0 +1,448 @@
+
+
+body{
+	text-decoration:none;
+	background-color:#CCC;
+	}
+	
+	.vvpall{
+		margin-top:20px;
+		background-color:#FFF;
+		height:1550px;
+		width:850px;
+		border-radius:5px;
+		border-color:#999;
+		border-width:thin
+		border-style:double;	
+		margin-right:auto;
+		margin-left:auto;
+		
+		}
+		
+		
+		.logotrack{
+			height:150px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			}
+			
+			.fclasss{
+				font-family:Arial, Helvetica, sans-serif;
+				font-weight:300;
+				font-size:24px;
+				color:#000;}
+				
+				
+				
+	.sepy{
+		height:10px;
+		width:850px;
+		
+		}
+		
+		
+		.logodest{
+			background-color:#F0F2FF;
+			height:140px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius:5px;
+			
+			
+			}
+			
+			.pay{
+			
+				height:35px;
+				width:700px;
+				background-color:#00338B;
+				border-top-left-radius:5px;
+				border-top-right-radius:5px;
+				}
+				
+				
+				.azu{
+			height:110px;
+			width:700px;
+			
+			}
+			
+			.pry{
+				padding-top:15px;
+				color:#FFF;
+				font:"Times New Roman", Times, serif;
+				font-size:12px;
+				}
+				
+				.pry2{
+				
+				color:#FFF;
+				font-family:Verdana, Geneva, sans-serif;
+				font-size:14px;
+				}
+				
+				
+				.tmka{
+					height:110px;
+					width:450px;
+					float:right;
+					}
+				
+				
+				.lod{
+					height:110px;
+					width:200px;
+					
+					}
+					
+					
+					.fclasss2{
+				font-family:Arial, Helvetica, sans-serif;
+				font-weight:300;
+				font-size:24px;
+				color:#CC0000;}
+				
+				
+				.one{
+					
+					border-bottom:thin #CCC;
+					border-bottom-style:double;
+					
+					height:40px;
+					width:450px;
+					
+					
+		}
+		
+		
+		
+		.two{
+					height:30px;
+					width:450px;
+					border-bottom-color:#F00;
+					border-bottom:thin;
+					border-bottom-style:double;	
+		
+		}
+		
+		
+		.smallfont{
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:12px;
+			color:#0033CC;
+			
+			}
+			
+			
+			.sepy2{
+		height:40px;
+		width:850px;
+		
+		}
+		
+		
+		.pay2{
+			
+				height:35px;
+				width:700px;
+				background-color:#7262DD;
+				border-top-left-radius:5px;
+				border-top-right-radius:5px;
+				}
+				
+				
+				
+				.able{
+			margin-left:auto;
+					margin-right:auto;
+					height:30px;
+					width:650px;
+					
+		
+		}
+				
+				
+				.one1{
+					margin-left:auto;
+					margin-right:auto;
+					border-bottom:thin #CCC;
+					border-bottom-style:double;
+					
+					height:40px;
+					width:650px;
+					
+					
+		}
+		
+		
+		
+		.two2{
+			margin-left:auto;
+					margin-right:auto;
+					height:30px;
+					width:650px;
+					border-bottom-color:#F00;
+					border-bottom:thin;
+					border-bottom-style:double;	
+		
+		}
+		
+		
+		.pryma{
+				padding-top:10px;
+				color:#FFF;
+				font-family:Verdana, Geneva, sans-serif;
+				font-size:14px;
+				}
+				
+				
+				.smallfont2{
+					padding-top:15px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:12px;
+			color:#0033CC;
+			
+			}
+			
+			.logodest3{
+			background-color:#FFF;
+			height:120px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			
+			
+			}
+			
+			
+			.sepy3{
+		height:15px;
+		width:850px;
+		
+		}
+		
+		.sepy4{
+		height:20px;
+		width:850px;
+		
+		}
+		
+		
+		
+		.one11{
+					margin-left:auto;
+					margin-right:auto;
+					
+					height:40px;
+					width:650px;
+					
+					
+		}
+		
+		
+		.logodesty{
+			background-color:#FFF;
+			height:110px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius:5px;
+			border-color:#CCC;
+			border-style:double;
+			border-width:thin;
+			
+			
+			}
+			
+			
+			
+			
+			.logodesty2{
+			background-color:#FFF;
+			height:280px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			border-radius:5px;
+			border-color:#CCC;
+			border-style:double;
+			border-width:thin;
+			
+			
+			}
+			
+			.sepylocation{
+		height:10px;
+		width:700px;
+		
+		}
+		
+		
+			
+			
+			
+			.logodestb{
+			background-color:#F0F2FF;
+			height:200px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			
+			
+			}
+			
+			.paypy{
+				background-color:#FFF;
+				height:35px;
+				width:700px;
+				
+				}
+				
+				.trackfont{
+					font-family:Verdana, Geneva, sans-serif;
+					font-size:14px;
+					color:#900;
+					}
+					
+					.one1a{
+					border-bottom:thin #CCC;
+					border-bottom-style:double;
+					
+					height:30px;
+					width:700px;
+					
+					
+		}
+		
+		.bekytrack{
+			overflow:auto;
+			height:130px;
+			width:700px;
+			}
+			
+			
+			
+			.smallfontb{
+					padding-top:10px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:14px;
+			color:#0033CC;
+			
+			}
+			
+			.tdsmall{}
+			
+			
+			.smally{
+				padding-top:0px;
+				padding-bottom:5px;
+				font-family:Verdana, Geneva, sans-serif;
+				font-size:12px;
+				}
+				
+				.pull{
+					border-radius:5px;
+					padding-left:15px;
+					height:30px;
+					width:40px;
+					float:right;
+					border:thin #CCC;
+					border-style:double;
+					}
+					
+					.ttb{
+						border-bottom:thin;
+						border-bottom-style:double;
+						border-bottom-color:#CCC;}
+						
+						
+						
+						
+			.logodest3bay{
+			background-color:#FFF;
+			height:70px;
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			
+			
+			}
+			
+			
+			.fut{
+				height:200px;
+				width:100%;
+				background-color:#CCC;
+				}
+				
+				.writeup{
+					height:200px;
+					width:850px;
+					margin-right:auto;
+					margin-left:auto;
+					
+		}
+		
+		#map{
+			background-image:url(map.png);
+			height:225px;
+			width:680px;
+			margin-left:auto;
+			margin-right:auto;
+			}
+			
+			.mapwrite{
+				border-radius:5px;
+				background-color:#FFF;
+				margin-right:auto;
+				margin-left:auto;
+				height:40px;
+				width:500px;
+				}
+				
+				.uma{
+					height:115px;
+					width:500px;
+					margin-left:auto;
+					margin-right:auto;
+					}
+					
+					
+					
+					.vvpall2{
+		margin-top:20px;
+		background-color:#FFF;
+		height:1250px;
+		width:850px;
+		border-radius:5px;
+		border-color:#999;
+		border-width:thin
+		border-style:double;	
+		margin-right:auto;
+		margin-left:auto;
+		
+		}
+		
+		
+		
+		.ty{
+			height:20px;
+			width:500px;
+			}
+			
+			.ty2{
+			height:20px;
+			width:250px;
+			}
+			
+			.ty2a{
+			height:15px;
+			width:200px;
+			}
+			
+			.ty2ab{
+			height:15px;
+			width:250px;
+			}

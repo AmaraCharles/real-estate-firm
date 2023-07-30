@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../admin/login_files/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbarr">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="packages.html">Packages</a>
+    <a href="trackingHistory.html">Tracking History</a>
+   
+        
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="dashboard.html">P N Ohammah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="trackingHistory.html">Tracking Hitory</a>
+              </li>
+           
+          </ul>
+        </div>
+      </nav>
+  <div class="content">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
+                <div class="fxt-content">
+                    <div class="live-section alert"></div>
+                    <div class="fxt-header">
+                       <h3>Edit Package</h3>
+                    <div class="fxt-form">
+                        <form  id="signupForm">
+                            <input type="hidden" name="_token"
+                                value="ndIa6pblghdJzlEzSSvhQzpMuCaovE1l1oMTN48H">
+                                <div class="form-group">
+                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                        <input type="text" id="trackingId" class="form-control" name="quantity"
+                                            placeholder="tracking ID" value="" >
+                                    </div>
+                                </div>
+                               
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input type="text" id="etd" class="form-control" name="quantity"
+                                        placeholder="etd" value="" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="eta" class="form-control"
+                                        name="" placeholder="eta" value="" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="destination" class="form-control"
+                                         placeholder="destination" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="totalFreight" class="form-control"
+                                        name="lastname" placeholder="totalFreight" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="serviceType" class="form-control"
+                                        name="" placeholder="serviceType" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="receiverName" class="form-control"
+                                        name="lastname" placeholder="receiverName" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="receiverEmail" class="form-control"
+                                        name="lastname" placeholder="receiverEmail" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="receiverAddress" class="form-control"
+                                        name="" placeholder="receiverAddress" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="deliveryDay" class="form-control"
+                                        name="lastname" placeholder="deliveryDay" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="paymentMode" class="form-control"
+                                         placeholder="paymentMode" >
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="senderName" class="form-control"
+                                        name="lastname" placeholder="senderName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="senderEmail" class="form-control"
+                                        name="lastname" placeholder="senderEmail" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="senderAddress" class="form-control"
+                                        name="lastname" placeholder="senderAddress" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="itemType" class="form-control"
+                                        name="lastname" placeholder="itemType" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input type="weight" id="weight" class="form-control"
+                                        name="lastname" placeholder="weight" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="mot" class="form-control"
+                                        name="lastname" placeholder="mode of transportation" >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="consignmentDetails" class="form-control"
+                                        name="lastname" placeholder="consignmentDetails" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="fmt" class="form-control"
+                                        name="lastname" placeholder="fmt" >
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                                    <input  id="location" class="form-control"
+                                        name="lastname" placeholder="Shipment activity" >
+                                </div>
+                            </div>
+                            
+                                <!-- <div class="g-recaptcha" data-sitekey="6LcPmLsZAAAAAC-_WMytYMOGJcgsa2it6VdMO-K5" data-callback="enableBtn"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./register_files/anchor.html" width="304" height="78" role="presentation" name="a-qulbpamvo9q2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./register_files/saved_resource.html"></iframe></div>
+                    </div>-->
+                               
+                                <div class="form-group">
+                                    <div class="fxt-transformY-50 fxt-transition-delay-4">
+                                        <button type="" class="btn btn-lg btn-primary btn-teal" id="updateBtn">
+                                            Save Changes
+                                        </button>
+                                      
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="fxt-footer">
+                        <div><span style="color:blue;">If form fails to submit on first submission,please retry or check mobile network</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+     </div>
+
+
+  <script>
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+    var currentUser = {};
+    
+    
+    $(document).ready(async function () {
+    
+      async function fetchUserInfo() {
+      var code = localStorage.getItem('userem')
+      var stringed=JSON.stringify(code)
+      var parsedData =JSON.parse(stringed)
+    
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://quesco-sserver.onrender.com/users/${parsedData}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          console.log("data", data);
+          Object.assign(currentUser, data.data)
+        },
+        error: function () {
+          alert(error)
+        }
+       
+      });
+    
+      return response.data;
+    }
+    
+      const userInfo = await fetchUserInfo();
+    const user=localStorage.setItem("user",userInfo)
+
+    $('#trackingId').val(userInfo.trackingId)
+     
+      $('#eta').val(userInfo.eta)
+      $('#etd').val(userInfo.etd)
+      $('#destination').val(userInfo.destination)
+      $('#totalFreight').val(userInfo.totalFreight)
+      $('#fmt').val(userInfo.fmt)
+    
+      $('#serviceType').val(userInfo.serviceType)
+      $('#receiverName').val(userInfo.receiverName)
+      $('#receiverEmail').val(userInfo.receiverEmail)
+      $('#receiverAddress').val(userInfo.receiverAddress)
+      $('#senderName').val(userInfo.senderName)
+      $('#senderEmail').val(userInfo.senderEmail)
+      $('#senderAddress').val(userInfo.senderAddress)
+      $('#paymentMode').val(userInfo.paymentMode)
+      $('#deliveryDay').val(userInfo.deliveryDay)
+      $('#weight').val(userInfo.weight)
+      $('#itemType').val(userInfo.itemType)
+      $('#consignmentDetails').val(userInfo.consignmentDetails)
+      $('#mot').val(userInfo.mot)
+      $('#location').val(userInfo.location)
+      
+    
+    
+    
+     });
+     function fix(){   var btn=$('.btn')
+      btn.text('Save Changes') }
+
+        
+    async function updateProfile({  etd,
+eta,trackingId,
+totalFreight,
+serviceType,
+destination,
+paymentMode,
+receiverName,
+receiverEmail,
+receiverAddress,
+deliveryDay,
+senderName,
+senderEmail,
+senderAddress,
+itemType,
+weight,
+mot,
+fmt,
+consignmentDetails,
+
+location})
+ {
+      console.log( etd,
+eta,trackingId,
+totalFreight,
+serviceType,
+destination,
+paymentMode,
+receiverName,
+receiverEmail,
+receiverAddress,
+deliveryDay,
+senderName,
+senderEmail,
+senderAddress,
+itemType,
+weight,
+mot,
+fmt,
+consignmentDetails,
+
+location);
+      console.log(currentUser);
+    
+      const response = await $.ajax({
+        type: "PUT",
+        url: `https://quesco-sserver.onrender.com/users/${currentUser._id}/profile/update`,
+        dataType: "json",
+        data: {  etd,
+eta,trackingId,
+fmt,
+totalFreight,
+serviceType,
+destination,
+paymentMode,
+receiverName,
+receiverEmail,
+receiverAddress,
+deliveryDay,
+senderName,
+senderEmail,
+senderAddress,
+itemType,
+weight,
+mot,
+consignmentDetails,
+
+location },
+        timeout: 30000,
+        success: function () {
+          $('.live-section').addClass("alert-primary").text("Package updated successfully")
+          
+          fix()
+          setTimeout(function () {$(location).prop('href', './packages.html')     
+                       }, 1000 * 1)
+    
+        }
+      });
+    
+      console.log(response);
+      return response.data
+    }
+    
+    
+    $('#updateBtn').click(async function (e) {
+      e.preventDefault();
+      var trackingId= $('#trackingId').val()
+      var etd= $('#etd').val()
+     var eta= $('#eta').val()
+     var totalFreight=$('#totalFreight').val()
+    var destination=$('#destination').val()
+    var paymentMode= $('#paymentMode').val()
+    var fmt= $('#fmt').val()
+   
+      var serviceType=$('#serviceType').val()
+     var receiverName= $('#receiverName').val()
+    var receiverEmail =$('#receiverEmail').val()
+    var receiverAddress=  $('#receiverAddress').val()
+     var deliveryDay= $('#deliveryDay').val()
+    var senderName= $('#senderName').val()
+    var senderEmail= $('#senderEmail').val()
+    var senderAddress= $('#senderAddress').val()
+   var itemType=$('#itemType').val()
+   var weight=$('#weight').val()
+   var mot=$('#mot').val()
+   var consignmentDetails=$('#consignmentDetails').val()
+   var location=$('#location').val()
+   console.log('working')
+
+   await   updateProfile({ 
+etd,
+eta,trackingId,
+totalFreight,
+serviceType,
+destination,
+paymentMode,
+receiverName,
+receiverEmail,
+receiverAddress,
+deliveryDay,
+senderName,
+senderEmail,
+senderAddress,
+itemType,
+weight,
+mot,
+fmt,
+consignmentDetails,
+
+location
+});
+    
+$('.btn').click(function(){
+      var btn=$('.btn')
+      btn.text('Updating. . .')
+    })
+
+  
+  topFunction();
+    })
+    
+    
+    
+      </script>
+    
+           
+    
+  <script src="script.js"></script>
+</body>
+</html>

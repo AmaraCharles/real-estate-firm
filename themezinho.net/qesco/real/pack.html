@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../admin/login_files/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/5a62f8e544.js" crossorigin="anonymous"></script>  
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbarr">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="packages.html">Packages</a>
+        <a href="trackingHistory.html">Tracking History</a>
+        
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="dashboard.html">P N Ohammah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trackingHistory.html">Tracking History</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+          <div class="content">
+        <div class="container">
+            <div class="live-section"></div>
+        <h1>Tracking History</h1>
+        <h6>Receiver: <span id="receiverName"></span></h6>
+        <h6>Tracking ID: <span id="id"></span></h6>
+      
+        <div class="table-container">
+            <table id="table-responsive" class="table">
+              <tr>
+                <th >Date</th>
+                <th >Time</th>
+                <th>Location</th>
+                <th>Status</th>
+               
+                
+                <!-- Add more header columns if needed -->
+              </tr>
+              <tbody class="table-body">
+            </tbody>
+          
+              <!-- Add more rows if needed -->
+            </table>
+          </div>
+        <!-- <div class="panel-body p-0" style="max-width: 500px;">
+            <table id="table-responsive" class=" table table-hover table table-bordere table-td-valign-middle">
+              <thead>
+                <tr>
+                  <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap">Username</th>
+                  <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap">Tracking ID</th>
+                  <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap">Edit</th>
+                  <th style="background-color: rgba(255,255,255,0.1);" class="text-center">View</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            
+            </table> 
+    
+          </div> -->
+         <form id="confirmPayment">
+          <div class="track mt-5" style="display: flex;flex-direction: column; justify-content: center; max-width: 500px; margin-top: 20px;">
+            <h3>ADD TRACKING HISTORY</h3>
+            
+            <div class="form-group">
+                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                    <input  id="dt" class="form-control"
+                        name="" placeholder="date" >
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                    <input  id="tm" class="form-control"
+                        name="" placeholder="time" >
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                    <input  id="ltn" class="form-control"
+                        name="" placeholder="location" >
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="fxt-transformY-50 fxt-transition-delay-1">
+                    <input  id="status" class="form-control"
+                        name="" placeholder="status" >
+                </div>
+            </div>
+            
+           
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn  btn-lg btn-primary btn-teal">
+                ADD
+              </button>
+                 </div>
+        </div>
+      </form>
+    
+      </div>
+    
+    
+      
+  <script>
+
+    var currentUser = {};
+    
+    
+    $(document).ready(async function () {
+    
+      async function fetchUserInfo() {
+      var code = localStorage.getItem('userem')
+      var stringed=JSON.stringify(code)
+      var parsedData =JSON.parse(stringed)
+    
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://quesco-sserver.onrender.com/users/${parsedData}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          console.log("data", data);
+          Object.assign(currentUser, data.data)
+        },
+        error: function () {
+          alert(error)
+        }
+       
+      });
+    
+      return response.data;
+    }
+
+    $('.btn').click(function(){
+      var btn=$('.btn')
+      btn.text('...')
+    })
+
+    
+    
+      const userInfo = await fetchUserInfo();
+      const userInfoString=JSON.stringify(userInfo)
+    const user=localStorage.setItem("user",userInfoString)
+
+    $('#receiverName').text(userInfo.receiverName)
+    $('#id').text(userInfo._id)
+   
+    
+    var tbl = $('.table-body');
+    var td=$('<td>');
+         userInfo.history.forEach(function (user) {
+         
+            var row = $('<tr>').appendTo(tbl);
+            $('<td>').text(`${user.dt}`).appendTo(row);
+                $('<td>').text(`${user.tm}`).appendTo(row);
+                  $('<td>').text(`${user.ltn}`).appendTo(row);
+               
+                  $('<td>').text(`${user.status}`).appendTo(row);
+          
+           
+            tbl.appendTo($(".table"));
+    
+           
+          
+    
+          })
+    
+
+    
+     });
+    
+    
+    
+    
+      </script>
+
+
+
+<script>
+  
+  
+
+  async function depositFnc(dataObj) {
+
+    await $.ajax({
+      type: "POST",
+      url: `https://quesco-sserver.onrender.com/transactions/${dataObj.userId}/deposit`,
+      dataType: "json",
+      data: { ...dataObj },
+      timeout: 30000,
+      success: function (data) {
+        console.log(data);
+        $('.live-section').html(" Tracking history added").addClass('alert-success')
+        setTimeout(function () {$(location).prop('href', './pack.html')     
+              }, 1000 * 2)
+
+      },
+      error: function (xhr, status, error) {
+        console.log(error);
+        $('.live-section').html("").addClass('alert-danger')
+      }
+    });
+
+  }
+
+  async function fetchUserId() {
+    var parsedData = await localStorage.getItem('user')
+    var user = JSON.parse((parsedData))
+
+    console.log(user);
+    return user;
+  }
+
+
+  $('#confirmPayment').submit(async function (e) {
+    e.preventDefault(); // prevents page reload
+    const dt = $('#dt').val();
+    const tm = $('#tm').val();
+    const ltn= $('#ltn').val();
+    const status= $('#status').val();
+   
+    const user = await fetchUserId();
+    const userId = user._id
+   
+    console.log(dt, tm, ltn,status, userId);
+    await depositFnc({ dt, tm, ltn,status, userId  });
+  });
+</script>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>
